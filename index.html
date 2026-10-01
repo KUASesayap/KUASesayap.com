@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Buku Tamu Digital | KUA Kecamatan Sesayap</title>
+<meta name="description" content="Buku Tamu Digital KUA Kecamatan Sesayap">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--green:#006b2d;--green2:#004f23;--green3:#0b8f46;--gold:#d9b43a;--ink:#17221c;--muted:#66736b;--line:#e2e9e4;--bg:#f4f8f5;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Inter,sans-serif;background:var(--bg)}
+header{min-height:570px;position:relative;color:#fff;overflow:hidden;background:linear-gradient(110deg,#003d1d 0%,#006b2d 48%,#0a8a45 100%)}
+.hero-bg{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(0,69,31,.97) 0%,rgba(0,88,39,.90) 43%,rgba(0,72,31,.56) 68%,rgba(0,50,24,.73) 100%),url("kepala-kua.jpeg");background-size:cover;background-position:center 26%;filter:saturate(.82)}
+.hero-bg:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 72% 40%,rgba(255,255,255,.12),transparent 28%),linear-gradient(0deg,rgba(0,45,21,.25),transparent 55%)}
+.wrap{max-width:1160px;margin:auto;padding:0 22px;position:relative;z-index:2}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:24px 0}.brand{display:flex;align-items:center;gap:13px}.brand-logo{width:58px;height:58px;border-radius:14px;background:#fff;padding:5px;object-fit:contain;box-shadow:0 8px 25px #00230e55}.brand strong{font-family:"Plus Jakarta Sans";font-size:18px}.brand small{display:block;opacity:.82;margin-top:4px}
+.nav-tag{border:1px solid #ffffff42;background:#ffffff13;padding:9px 13px;border-radius:999px;font-size:12px;font-weight:700;backdrop-filter:blur(10px)}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:45px;padding:45px 0 70px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid #ffffff35;background:#ffffff12;border-radius:999px;font-size:12px;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:#d7ef9d}.hero h1{font-family:"Plus Jakarta Sans";font-size:52px;line-height:1.08;margin:18px 0 15px;letter-spacing:-1.7px}.hero p{font-size:16px;line-height:1.75;max-width:650px;color:#edf8f0}.hero-card{justify-self:end;width:min(340px,100%);background:#ffffff13;border:1px solid #ffffff32;border-radius:26px;padding:16px;backdrop-filter:blur(13px);box-shadow:0 22px 60px #00220d45}.portrait{height:310px;border-radius:18px;overflow:hidden;background:#dcebe1;position:relative}.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 18%;display:block}.portrait:after{content:"";position:absolute;inset:auto 0 0;height:34%;background:linear-gradient(transparent,rgba(0,50,23,.6))}.person{padding:14px 4px 4px}.person b{font-size:15px}.person span{display:block;font-size:12px;opacity:.78;margin-top:4px}
+main{max-width:1160px;margin:-62px auto 45px;padding:0 22px;position:relative;z-index:4}.card{background:#fff;border:1px solid #fff;border-radius:25px;padding:31px;box-shadow:0 22px 65px #173d2518}.topline{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:25px}.topline h2{margin:0;font-family:"Plus Jakarta Sans";font-size:22px}.badge{font-size:12px;font-weight:800;color:var(--green);background:#eaf7ef;border:1px solid #d6efdf;padding:9px 12px;border-radius:999px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.full{grid-column:1/-1}label{display:block;font-size:13px;font-weight:800;margin-bottom:8px}label span{color:#b20e18}input,select,textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:#fbfdfb;font:inherit;color:var(--ink);outline:none;transition:.2s}input:focus,select:focus,textarea:focus{border-color:#4aa66d;box-shadow:0 0 0 4px #07843a12;background:#fff}textarea{min-height:105px;resize:vertical}
+.actions{display:flex;justify-content:flex-end;gap:10px;margin-top:22px}.btn{border:0;border-radius:12px;padding:13px 20px;font:inherit;font-weight:800;cursor:pointer}.primary{background:linear-gradient(135deg,var(--green),var(--green3));color:#fff;box-shadow:0 9px 22px #006b2d2c}.secondary{background:#eef2ef;color:#26342c}.btn:disabled{opacity:.6;cursor:not-allowed}.notice{margin-top:18px;padding:14px 16px;border-radius:12px;display:none;font-size:13px;line-height:1.55}.success{display:block;background:#eaf8ef;color:#116336}.error{display:block;background:#fff0f0;color:#9c1820}.privacy{margin-top:15px;color:#849089;font-size:11px;line-height:1.65}
+.stats-public{max-width:1160px;margin:0 auto 42px;padding:0 22px}.stats-box{background:#fff;border:1px solid #e6ede8;border-radius:22px;padding:24px;box-shadow:0 15px 45px #173d2510}.stats-head{display:flex;justify-content:space-between;align-items:flex-end;gap:15px;margin-bottom:20px}.stats-head h2{margin:0;font-family:"Plus Jakarta Sans";font-size:20px}.stats-head p{margin:5px 0 0;color:var(--muted);font-size:12px}.live{font-size:11px;font-weight:800;color:var(--green);background:#eaf7ef;border:1px solid #d6efdf;padding:8px 11px;border-radius:999px;white-space:nowrap}.stat-overview{display:grid;grid-template-columns:220px 1fr;gap:25px;align-items:center}.total-box{background:linear-gradient(135deg,#006b2d,#0b8f46);color:#fff;border-radius:18px;padding:22px;text-align:center}.total-box small{display:block;opacity:.82;font-size:11px}.total-box b{display:block;font-size:42px;line-height:1;margin:8px 0 5px;font-family:"Plus Jakarta Sans"}.total-box span{font-size:11px;opacity:.82}.bars{display:grid;gap:12px}.bar-row{display:grid;grid-template-columns:minmax(135px,1.1fr) 2fr 55px;gap:10px;align-items:center;font-size:12px}.bar-label{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bar-track{height:10px;border-radius:99px;background:#edf3ee;overflow:hidden}.bar-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--green),#63b87f);transition:width .5s ease}.bar-value{text-align:right;font-weight:800;color:var(--green)}.stats-empty{font-size:12px;color:var(--muted);padding:12px 0}.quick{max-width:1160px;margin:0 auto 48px;padding:0 22px}.quick-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.qcard{background:#fff;border:1px solid #e6ede8;border-radius:17px;padding:18px}.qicon{width:38px;height:38px;border-radius:11px;background:#eaf7ef;color:var(--green);display:grid;place-items:center;font-weight:900;margin-bottom:12px}.qcard b{font-size:14px}.qcard p{font-size:12px;color:var(--muted);line-height:1.55;margin:7px 0 0}
+.social{position:fixed;right:20px;bottom:20px;z-index:20;display:flex;flex-direction:column;gap:10px}.social a{width:47px;height:47px;border-radius:15px;background:#fff;display:grid;place-items:center;text-decoration:none;color:#153322;font-weight:900;box-shadow:0 10px 28px #10281928;border:1px solid #e6ebe8;transition:.2s}.social a:hover{transform:translateY(-3px)}.social svg{width:25px;height:25px;display:block;fill:currentColor}.social .ig{color:#d62976}.social .tt{color:#111}.social .wa{color:#25d366}
+footer{background:#063a1b;color:#d9e9df;text-align:center;padding:27px 20px;font-size:12px;line-height:1.7}footer b{color:#fff}
+@media(max-width:800px){.stat-overview{grid-template-columns:1fr}.bar-row{grid-template-columns:1fr 1.5fr 48px}.stats-head{align-items:flex-start;flex-direction:column}.hero{grid-template-columns:1fr;padding-top:30px}.hero-card{justify-self:start;max-width:300px}.hero h1{font-size:38px}.portrait{height:270px}.grid{grid-template-columns:1fr}.full{grid-column:auto}.quick-inner{grid-template-columns:1fr}.nav-tag{display:none}.card{padding:22px}.actions{flex-direction:column}.btn{width:100%}}
+</style>
+</head>
+<body>
+<header><div class="hero-bg"></div><div class="wrap">
+<nav class="nav"><div class="brand"><img class="brand-logo" src="logo-kemenag.png" alt="Logo Kementerian Agama"><div><strong>KUA Kecamatan Sesayap</strong><small>Kementerian Agama Republik Indonesia</small></div></div><div class="nav-tag">PELAYANAN PUBLIK DIGITAL</div></nav>
+<section class="hero"><div><span class="eyebrow"><i class="dot"></i> Buku Tamu Digital KUA Sesayap</span><h1>Selamat Datang di KUA Kecamatan Sesayap</h1><p>Catat kunjungan Anda dengan mudah, cepat, dan tertib melalui layanan buku tamu digital. Terima kasih telah mempercayakan pelayanan kepada kami.</p></div>
+<div class="hero-card"><div class="portrait"><img src="kepala-kua.jpeg" alt="Kepala KUA Kecamatan Sesayap"></div><div class="person"><b>Mustakim,S.H.I</b><span>Kepala KUA Kecamatan Sesayap</span></div></div></section>
+</div></header>
+
+<main><section class="card"><div class="topline"><h2>Formulir Kunjungan</h2><span class="badge">● Siap Melayani</span></div>
+<form id="guestForm"><div class="grid">
+<div><label>Nama Lengkap <span>*</span></label><input id="nama" required maxlength="100" autocomplete="name" placeholder="Masukkan nama lengkap"></div>
+<div><label>No. HP / WhatsApp <span>*</span></label><input id="hp" required inputmode="tel" maxlength="20" placeholder="08xxxxxxxxxx"></div>
+<div><label>Alamat <span>*</span></label><input id="alamat" required maxlength="180" placeholder="Desa/Kelurahan, Kecamatan"></div>
+<div><label>Keperluan <span>*</span></label><select id="keperluan" required><option value="">Pilih keperluan</option><option>Pendaftaran Nikah</option><option>Konsultasi Pernikahan</option><option>Bimbingan Perkawinan</option><option>Rujuk</option><option>Wakaf</option><option>Konsultasi Keluarga</option><option>Administrasi KUA</option><option>Surat/Rekomendasi</option><option>Lainnya</option></select></div>
+<div><label>Bertemu dengan</label><input id="bertemu" maxlength="100" placeholder="Nama petugas/pegawai (jika ada)"></div>
+<div class="full"><label>Keterangan</label><textarea id="keterangan" maxlength="500" placeholder="Keterangan tambahan jika diperlukan"></textarea></div>
+</div><div class="actions"><button type="reset" class="btn secondary">Reset</button><button id="submitBtn" class="btn primary" type="submit">Kirim Buku Tamu</button></div><div id="notice" class="notice"></div>
+<div class="privacy">Data kunjungan digunakan untuk administrasi dan evaluasi pelayanan KUA. Mohon mengisi data dengan benar dan tidak memasukkan data pribadi yang tidak diperlukan.</div>
+</form></section></main>
+
+<section class="stats-public" aria-label="Statistik kunjungan"><div class="stats-box">
+<div class="stats-head"><div><h2>Statistik Kunjungan</h2><p>Jumlah tamu dan persentase tujuan kunjungan berdasarkan data yang tercatat.</p></div><span class="live">● TERBARU OTOMATIS</span></div>
+<div class="stat-overview"><div class="total-box"><small>Total Tamu Terdaftar</small><b id="publicTotal">—</b><span>kunjungan tercatat</span></div><div id="publicBars" class="bars"><div class="stats-empty">Memuat statistik…</div></div></div>
+</div></section>
+
+<section class="quick"><div class="quick-inner">
+<div class="qcard"><div class="qicon">01</div><b>Isi Data Kunjungan</b><p>Lengkapi identitas dan keperluan Anda pada formulir di atas.</p></div>
+<div class="qcard"><div class="qicon">02</div><b>Data Tercatat</b><p>Data kunjungan dikirim ke sistem administrasi secara digital.</p></div>
+<div class="qcard"><div class="qicon">03</div><b>Terima Kasih</b><p>Masukan Anda membantu kami meningkatkan kualitas pelayanan.</p></div>
+</div></section>
+
+<div class="social" aria-label="Media sosial KUA Sesayap">
+<a class="wa" href="javascript:void(0)" id="waLink" target="_blank" rel="noopener" title="WhatsApp KUA" aria-label="WhatsApp KUA"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2.01a9.91 9.91 0 0 0-8.58 14.88L2 22l5.28-1.39A9.91 9.91 0 1 0 12.04 2.01Zm0 18.03a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.13.82.84-3.05-.2-.31a8.1 8.1 0 1 1 6.92 3.85Zm4.44-6.08c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19-.71-.63-1.19-1.4-1.33-1.64-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.41-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.09 3.62.57.25 1.01.4 1.35.51.57.18 1.09.16 1.5.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/></svg></a>
+<a class="ig" href="javascript:void(0)" id="igLink" target="_blank" rel="noopener" title="Instagram KUA" aria-label="Instagram KUA"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 1.8a4 4 0 0 0-4 4v8.4a4 4 0 0 0 4 4h8.4a4 4 0 0 0 4-4V7.8a4 4 0 0 0-4-4H7.8Zm8.9 1.35a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z"/></svg></a>
+<a class="tt" href="javascript:void(0)" id="ttLink" target="_blank" rel="noopener" title="TikTok KUA" aria-label="TikTok KUA"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.8 2h2.7c.2 1.7 1.2 3.2 2.5 4.1v2.8a9 9 0 0 1-2.5-.7v6.5a7.3 7.3 0 1 1-7.3-7.3c.4 0 .8 0 1.2.1v2.9a4.5 4.5 0 1 0 3.4 4.3V2Z"/></svg></a>
+</div>
+<footer>© <span id="year"></span> <b>KUA Kecamatan Sesayap</b><br>Kementerian Agama Republik Indonesia · Buku Tamu Digital</footer>
+<script src="config.js"></script>
+<script>
+const API_URL=KUA_CONFIG.API_URL;
+const SOCIAL=KUA_CONFIG.SOCIAL;
+
+const STATS_INTERVAL=10000;
+document.getElementById("year").textContent=new Date().getFullYear();
+document.getElementById("waLink").href=SOCIAL.WHATSAPP;document.getElementById("igLink").href=SOCIAL.INSTAGRAM;document.getElementById("ttLink").href=SOCIAL.TIKTOK;
+const form=document.getElementById("guestForm"),btn=document.getElementById("submitBtn"),notice=document.getElementById("notice");
+function msg(t,ok){notice.textContent=t;notice.className="notice "+(ok?"success":"error");notice.style.display="block";}
+function renderPublicStats(stats){
+  const total=Number(stats?.total||0);
+  document.getElementById("publicTotal").textContent=total.toLocaleString("id-ID");
+  const bars=document.getElementById("publicBars");
+  const items=Array.isArray(stats?.byKeperluan)?stats.byKeperluan:[];
+  if(!items.length){bars.innerHTML='<div class="stats-empty">Belum ada data tujuan kunjungan.</div>';return;}
+  bars.innerHTML=items.map(x=>`<div class="bar-row"><div class="bar-label" title="${esc(x.keperluan)}">${esc(x.keperluan)}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.min(100,Number(x.persentase)||0)}%"></div></div><div class="bar-value">${Number(x.persentase)||0}%</div></div>`).join("");
+}
+async function loadPublicStats(){
+  if(API_URL.includes("PASTE_")) return;
+  try{const r=await fetch(API_URL+"?action=stats&ts="+Date.now(),{cache:"no-store"});const j=await r.json();if(j.ok)renderPublicStats(j.stats);}catch(e){}
+}
+function esc(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+form.addEventListener("submit",async e=>{e.preventDefault();notice.style.display="none";if(API_URL.includes("PASTE_")){msg("Website belum terhubung ke database. Masukkan URL Google Apps Script pada file index.html.",false);return}
+const data={nama:document.getElementById("nama").value.trim(),hp:document.getElementById("hp").value.trim(),alamat:document.getElementById("alamat").value.trim(),keperluan:document.getElementById("keperluan").value,bertemu:document.getElementById("bertemu").value.trim(),keterangan:document.getElementById("keterangan").value.trim()};
+btn.disabled=true;btn.textContent="Mengirim…";try{const r=await fetch(API_URL,{method:"POST",mode:"cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(data)});const j=await r.json();if(!j.ok)throw new Error(j.message||"Gagal");form.reset();msg("Terima kasih. Data kunjungan Anda berhasil dicatat dan statistik telah diperbarui.",true);if(j.stats)renderPublicStats(j.stats);else await loadPublicStats();window.scrollTo({top:document.querySelector(".card").offsetTop-20,behavior:"smooth"});}catch(err){msg("Data belum tersimpan. Periksa koneksi dan konfigurasi database.",false)}finally{btn.disabled=false;btn.textContent="Kirim Buku Tamu"}});
+loadPublicStats();setInterval(loadPublicStats,STATS_INTERVAL);
+</script></body></html>
